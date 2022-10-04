@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Library.master.cs" Inherits="webapp1.Library" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            background-color: #C0C0C0;
+        }
+        .auto-style2 {
+            height: 127px;
+        }
+        .auto-style3 {
+            height: 127px;
+            width: 256px;
+        }
+        .auto-style4 {
+            height: 54px;
+            width: 256px;
+        }
+        .auto-style5 {
+            height: 54px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <br />
+            <br />
+            <br />
+        </div>
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style3">
+                    <asp:Image ID="Image1" runat="server" Height="115px" ImageUrl="~/Images/50643.jpg" Width="262px" />
+                </td>
+                <td class="auto-style2">
+                    <asp:Label ID="Label1" runat="server" CssClass="auto-style3" Font-Bold="True" Font-Names="Rockwell Extra Bold" Font-Size="XX-Large" ForeColor="Black" Height="90px" TabIndex="8" Text=" Anand Private Library" Width="1040px"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style4">
+                    <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1">
+                    </asp:Menu>
+                    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                </td>
+                <td class="auto-style5">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <p>
+                    &nbsp;</p>
+                <p>
+                    &nbsp;</p>
+                <p>
+                    &nbsp;</p>
+            </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

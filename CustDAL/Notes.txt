@@ -1,0 +1,12 @@
+﻿Func Delegate and lambd expression 
+
+Func<Input, Output> DelegateName = (a) => a*a;
+
+Func<int,int,int> mul = (a,b) => {retrun a*b ;}; ------->  it accept 16 input parameter and retrun whatever
+		pareameter we specifies 
+
+
+predicate delegate lambda is return only boolean value ;
+
+
+ienumarable ----->  when we use t
